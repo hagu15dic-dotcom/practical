@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>>Huella Hídrica - Lavado de Manos</title>
+    <style>
+        :root {
+            --bg: #fff6ed; 
+            --panel: #fff6ed;
+            --card: #fff6ed;
+            --text: #4a3520; 
+            --muted: #4a3520;
+            --accent: #8b5a2b;
+            --accent2: #8b5a2b; 
+            --radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+            color: var(--text);
+            background: #e6d5b8; 
+            background-blend-mode: screen;
+            padding-bottom: 30px; 
+        }
+
+        header {
+            background: var(--panel);
+            border: 1px solid #1f2937;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 18px;
+            margin: 14px 20px 0; 
+            text-align: center;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; 
+            padding: 20px;
+            margin: 20px;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .content-section img {
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .content-section p, .content-section h2 {
+            margin: 0 0 10px;
+            text-align: justify;
+            color: var(--text);
+        }
+
+        .content-section h1 {
+            margin: 0 0 10px;
+            color: #5a3b1e;
+        }
+
+        .video-container {
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .video-container h2 {
+            color: var(--text);
+        }
+
+        .doc-container {
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .doc-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .doc-container h2, .doc-container p, .doc-container a {
+            color: var(--text);
+        }
+
+        .opciones-button {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            background: #8b5a2b;
+            border: 1px solid #4b3017;
+        }
+
+        .opciones-button:hover {
+            background: #e7e2dd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LAVADO DE MANOS</h1>
+</header>
+
+<section class="content-section">
+    <img src="Pasos.jpg" alt="Ilustración de pasos de lavado de manos">
+    <div>
+        <h1 style="text-align: center; font-size: 1.4rem; font-weight: bold;">Paso a Paso:</h1>
+        <p>Moja tus manos con agua, aplícate jabón y frótalas enérgicamente por al menos 20 segundos, cubriendo palmas, dorsos, entre los dedos, debajo de las uñas y las muñecas. Luego, enjuaga bien con agua corriente y sécalas con una toalla desechable, la cual puedes usar para cerrar el grifo.</p>
+        <h2 style="text-align: center; font-size: 1.4rem; font-weight: bold;">PASOS MAS DETALLADOS:</h2>
+        <ul>
+            <li>Mójese las manos: Con agua limpia y corriente, ya sea tibia o fría.</li>
+            <li> Aplique jabón: Coloque suficiente jabón líquido o en barra para cubrir todas las superficies de las manos.</li>
+            <li>Frote las palmas: Frótese las palmas de las manos entre sí.</li>
+            <li>Lave el dorso: Frote la palma de una mano contra el dorso de la otra, entrelazando los dedos, y repita con la mano opuesta.</li>
+            <li>Entrelace los dedos: Frote las palmas de las manos entre sí con los dedos entrelazados.</li>
+            <li> Frote los nudillos: Frote el dorso de los dedos de una mano con la palma de la mano opuesta, agarrándose los dedos.</li>
+            <li> Limpie los pulgares: Frote con un movimiento de rotación el pulgar de una mano, atrapándolo con la palma de la otra, y viceversa.</li>
+            <li> Froter los dedos y uñas: Frote las puntas de los dedos de una mano contra la palma de la otra, haciendo un movimiento de rotación para limpiar debajo de las uñas.</li>
+            <li>Enjuague bien: Enjuague sus manos con abundante agua corriente hasta que todo el jabón sea retirado.</li>
+            <li> Séquese las manos: Séquese por completo con una toalla de papel desechable.</li>
+            <li>Cierre el grifo: Utilice la misma toalla de papel para cerrar el grifo y luego deséchela.</li>
+        </ul>
+    </div>
+</section>
+
+<div class="video-container">
+     <h2 style="text-align: center; font-size: 1.4rem; font-weight: bold;">Recomendaciones Visuales</h2>
+    <video controls autoplay loop muted poster="imagen_portada.jpg">
+        <source src="LavadodeManos.mp4" type="video/mp4">
+        <p>Tu navegador no soporta este formato de video.</p>
+    </video>
+</div>
+
+<div class="doc-container">
+     <h2 style="text-align: center; font-size: 1.4rem; font-weight: bold;">DOCUMENTACIÓN</h2>
+    <h5 style="text-align: center; font-size: 1.4rem; font-weight: bold;">Fuente: Instituto Nacional de Pediatría</h5>
+    <iframe src="Ahorro.pdf"></iframe>
+    <p style="text-align: center;"><a href="https://www.saludcastillayleon.es/HSReyesAranda/es/informacion-general/calidad/lavado-higienico-manos" class="opciones-button">PAGUINA VISUAL DEINFORMACIÓN</a></p>
+</div>
+
+<section class="content-section">
+    <img src="agua1.gif" alt="Ilustración de consumo de agua por lavado de manos">
+    <div>
+        <h1>Consumo diario: Si te lavas las manos 10 veces al día (promedio): 2 L × 10 = 20 litros al día</h1>
+    </div>
+</section>
+
+<section class="content-section">
+    <img src="agua2.gif" alt="Gráfico de consumo de agua">
+    <div>
+        <h1>En un mes (30 días):25 litros x 30 = 750 litros al mes
+</h1>
+    </div>
+</section>
+
+<section class="content-section">
+    <img src="agua3.gif" alt="Ejemplo de ahorro de agua">
+    <div>
+        <h1> Consumo diario: Si te lavas las manos 10 veces al día (promedio): 2 L × 10 = 20 litros al día</h1>
+    </div>
+</section>
+
+<div class="video-container">
+    <h2>PASO A PASO</h2>
+    <video controls autoplay loop muted poster="imagen_portada.jpg">
+        <source src="Lavado correcto de manos..mp4" type="video/mp4">
+        <p>Tu navegador no soporta este formato de video.</p>
+    </video>
+</div>
+
+<section class="content-section">
+    <h2>AUDIO AHORRATIVO:</h2>
+    <audio src="Cuidado.mp3" controls>
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</section>
+
+<div class="item">
+    <footer>
+        <p style="text-align: center;"><a href="../index.html" class="opciones-button">INDEX</a></p>
+    </footer>
+</div>
+
+</body>
+</html>

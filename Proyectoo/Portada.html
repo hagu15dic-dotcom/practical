@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Huella Hídrica -Portada</title>
+    <style>
+        :root {
+            --bg: #97C8F0;
+            --panel: #97C8F0;
+            --card: #97C8F0;
+            --text: #000000;
+            --muted: #1e5aa4;
+            --accent: #22d3ee;
+            --accent2: #2d6be6;
+            --radius: 16px;
+            --shadow: 0 12px 40px rgb(35, 175, 207);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+            color: var(--text);
+            background: radial-gradient(1200px 400px at 10% -10%, #0ea5e9 15%, transparent 60%),
+            radial-gradient(1000px 300px at 110% -10%, #4c84d2 10px, transparent 55%),
+            linear-gradient(180deg, #2259c8 50%, #1847d4);
+            background-blend-mode: screen;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        header {
+            background: var(--panel);
+            border: 1px solid #1f2937;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 18px;
+            margin-top: 14px;
+            text-align: center; /* Centrar contenido del header */
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand h1 {
+            margin: 0;
+            font-size: 1.6rem;
+        }
+
+        .brand .tag {
+            color: var(--muted);
+            font-size: .95rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2d6ae3;
+            background: #ecfeff;
+            border: 1px solid #0891b2;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background: var(--accent);
+            color: #4277e0;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit,
+            minmax(260px, 1fr));
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid #3a80e1;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 16px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .grif {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 12px;
+            display: block;
+            margin: auto;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #0ea5e9;
+            color: #2fa3cd;
+            font-weight: 700;
+        }
+
+        .code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, consas, "Liberation Mono",
+            monospace;
+            color: #b3e6ff;
+        }
+
+        .top {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            background: var(--accent2);
+            color: #121dba;
+            padding: 10px 12px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid #f9a8d4;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            padding: 24px 0 40px;
+        }
+
+        iframe {
+            border: 0;
+            border-radius: 12px;
+            width: 100%;
+            height: 320px;
+        }
+
+        /* Estilos para el botón "OPCIONES" */
+        .opciones-button {
+            display: inline-block; 
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #2d6ae3;
+            background: #ecfeff;
+            border: 1px solid #0891b2;
+        }
+
+        .opciones-button:hover {
+            background: var(--accent);
+            color: #4277e0;
+        }
+
+   .fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;  
+    z-index: -1;   
+}
+    </style>
+</head>
+<body>
+    <header>
+    <img src="Agua.jpg" alt="Imagen" class="fullscreen-image">
+</header>
+    <footer>
+        <a href="Introduccion.html" class="opciones-button">ENTRAR</a>
+    </footer>
+    </body>
+    </html>
+</body> 
+</html>
